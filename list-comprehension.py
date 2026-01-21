@@ -19,3 +19,19 @@ print(res)
 numbers = [1, 2, 3, 4, 5]
 res = [ value**2 for value in a if value % 2 == 0 ]
 print(res)
+
+# Creating a list from a range
+
+a = [ i for i in range(2,10,2)]
+print(a)
+
+# Using nested loops
+
+c = [ (x,y) for x in range(3) for y in range(3)]
+print(c)
+
+# Flattening a list of lists
+
+mat = [ [1,2,3],[4,5,6,],[7,8,9]]
+res = [val for row in mat for val in row]
+print(res)
