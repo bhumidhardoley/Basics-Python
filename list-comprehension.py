@@ -32,6 +32,17 @@ print(c)
 
 # Flattening a list of lists
 
-mat = [ [1,2,3],[4,5,6,],[7,8,9]]
-res = [val for row in mat for val in row]
-print(res)
+matrix = [ [1,2,3],[4,5,6],[7,8,9]]
+newMatrix = [val for row in matrix for val in row]
+print(newMatrix)
+
+# In list comprehension the logic is exactly same with the for loop for example
+
+m = [[ 11,12,13],[14,15,16],[17,18,19]]
+newM = [ ]
+for row in m: 
+    for val in row:
+        newM.append(val)
+print(newM)
+
+# (In my understanding): It just keeps all the codes in one line instead of using indentations
